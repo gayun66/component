@@ -1,20 +1,22 @@
 {
-  "name": "component",
-  "version": "1.0.0",
-  "description": "component",
-  "main": "index.js",
+  "name": "components",
+  "private": true,
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
-  },
-  "keywords": [
-    "component"
-  ],
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
+    "start": "eleventy --serve",
+    "build": "eleventy && node cleanup.js"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "@11ty/eleventy": "^2.0.1",
+    "fs-extra": "^11.2.0"
+  },
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "sass": "^1.77.8"
   }
 }
