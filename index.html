@@ -1,0 +1,10 @@
+---
+layout: layout.html
+---
+
+{% if collections.component.length > 0 %} {% for component in collections.component %}
+<h2><a href="{{ component.url }}">{{ component.data.title }}</a></h2>
+<p>{{ component.content }}</p>
+{% endfor %} {% else %}
+<p>No components found.</p>
+{% endif %}
