@@ -1,10 +1,16 @@
 ---
 layout: layout.html
+css:
+  - "../_includes/styles/style.scss"
 ---
 
 {% if collections.component.length > 0 %} {% for component in collections.component %}
-<h2><a href="{{ component.url }}">{{ component.data.title }}</a></h2>
-<p>{{ component.content }}</p>
+<div class="component">
+  <h2 class="component-title">
+    <a href="{{ component.url }}">{{ component.data.title }}</a>
+  </h2>
+  {{ component.content }}
+</div>
 {% endfor %} {% else %}
 <p>No components found.</p>
 {% endif %}

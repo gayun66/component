@@ -1,0 +1,12 @@
+@use "./utils" as *;
+@use "./reset";
+@use "./popup";
+
+.component {
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+
+  padding: 20px;
+  color: #000;
+}
