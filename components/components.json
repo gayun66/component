@@ -1,4 +1,5 @@
 {
   "layout": "layout.html",
-  "tags": "component"
+  "tags": "component",
+  "css": "../_includes/styles/style.scss"
 }
